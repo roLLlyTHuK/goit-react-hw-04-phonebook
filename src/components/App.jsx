@@ -51,10 +51,15 @@ export const App = () => {
   return (
     <div>
       <h1>Phonebook</h1>
+
       <ContactForm onSubmit={handleSubmit} />
+
       <h2>Contacts</h2>
+
       <Filter value={filter} onChange={handleChangeFilter} />
+
       <ContactList contacts={filteredContacts} onDelete={handleDelete} />
+      
     </div>
   );
 };
